@@ -1,193 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishi Raj Singh — Actor Profil</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishi Raj Singh – Acting Portfolio</title>
 
-    <style>
-        /* Global Styles */
-        body {
-            margin: 0;
-            font-family: "Poppins", sans-serif;
-            background: #faf3e0;
-            color: #2c2c2c;
-            overflow-x: hidden;
-        }
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        h2.title {
-            font-size: 32px;
-            text-align: center;
-            margin-bottom: 10px;
-            color: #b22222;
-            font-family: "Merriweather", serif;
-            letter-spacing: 1px;
-        }
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #faf3e5;
+    color: #222;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
 
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+/* Bollywood Header */
+header {
+    background: linear-gradient(135deg, #8b0000, #ffcc66);
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.4s ease-out;
+}
+header h1 {
+    font-size: 38px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.7);
+}
+header p {
+    font-size: 18px;
+    margin-top: 6px;
+}
 
-        /* Bollywood Cinematic Glow */
-        .cinematic {
-            animation: glow 4s ease-in-out infinite alternate;
-        }
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
-        @keyframes glow {
-            from { text-shadow: 0 0 10px #ffcc80; }
-            to { text-shadow: 0 0 25px #ff6f00; }
-        }
+/* Decorative Border */
+.border-decor {
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(
+        45deg,
+        #ffcc66 0 10px,
+        #8b0000 10px 20px
+    );
+}
 
-        /* Header */
-        header {
-            background: linear-gradient(to bottom, #800000, #b22222);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            background-image: url('https://i.imgur.com/7Xq1N6L.png');
-            background-size: cover;
-            background-blend-mode: multiply;
-        }
+/* SECTIONS */
+section {
+    padding: 40px 20px;
+    max-width: 950px;
+    margin: auto;
+    animation: fadeUp 1.2s ease-out;
+}
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
-        header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #8b0000;
+    text-shadow: 0px 0px 6px rgba(255,204,0,0.5);
+}
 
-        header p {
-            font-size: 18px;
-        }
+p { font-size: 17px; }
 
-        /* Buttons */
-        a, button {
-            text-decoration: none;
-            display: inline-block;
-            padding: 12px 24px;
-            border-radius: 6px;
-            margin-top: 10px;
-            transition: 0.3s;
-        }
+/* Showreel Button */
+.showreel-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #8b0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.showreel-btn:hover {
+    background: #b30000;
+}
 
-        .showreel-btn {
-            background: #b22222;
-            color: white;
-            font-weight: 600;
-        }
+/* GALLERY */
+.gallery {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+.gallery div {
+    background: #fff4d6;
+    height: 180px;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+}
 
-        .showreel-btn:hover {
-            background: #8b0000;
-            transform: scale(1.05);
-        }
+/* CONTACT */
+.contact p {
+    font-size: 18px;
+    margin: 4px 0;
+}
 
-        /* Bollywood Shine Animation */
-        .shine {
-            background-image: linear-gradient(
-                90deg,
-                rgba(255,255,255,0) 0%,
-                rgba(255,255,255,0.5) 50%,
-                rgba(255,255,255,0) 100%
-            );
-            background-size: 200% 100%;
-            animation: shineAnim 3s infinite;
-        }
-
-        @keyframes shineAnim {
-            from { background-position: -200% 0; }
-            to   { background-position: 200% 0; }
-        }
-
-        /* Cards */
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #800000;
-            color: white;
-            margin-top: 40px;
-        }
-    </style>
+</style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1 class="cinematic">Rishi Raj Singh</h1>
-        <p>Actor • Performer • Storyteller</p>
-    </header>
+<!-- Top Pattern -->
+<div class="border-decor"></div>
 
-    <!-- ABOUT -->
-    <section id="about">
-        <h2 class="title">About Me</h2>
-        <div class="card shine">
-            <p>
-                Passionate Indian actor focused on film, web series, and commercial work. 
-                Blending emotional depth, discipline, and natural screen presence to deliver impactful performances.
-            </p>
-        </div>
-    </section>
+<header>
+    <h1>Rishi Raj Singh</h1>
+    <p>Actor • Performer • Storyteller</p>
+</header>
 
-    <!-- SHOWREEL -->
-    <section id="showreel">
-        <h2 class="title">Showreel</h2>
-        <p>You can view my showreel here once uploaded.</p>
+<div class="border-decor"></div>
 
-        <!-- Add YouTube Link Here -->
-        <a href="https://youtube.com/" target="_blank" class="showreel-btn">
-            🎬 Watch Showreel
-        </a>
-    </section>
+<section id="about">
+    <h2 class="title">About Me</h2>
+    <p>
+        I’m a passionate aspiring actor and a fresher in the industry, driven by a deep love for performance 
+        and cinematic storytelling. I’m open to collaborating on all kinds of projects — films, web series, ads, 
+        content videos, and experimental work. My goal is to grow through every opportunity and deliver honest, 
+        impactful performances.
+    </p>
+</section>
 
-    <!-- PHOTOS -->
-    <section id="photos">
-        <h2 class="title">Portfolio</h2>
+<div class="border-decor"></div>
 
-        <div class="card">
-            <p>Upload your acting photos/headshots here later.</p>
-        </div>
-    </section>
+<section id="showreel">
+    <h2 class="title">Showreel</h2>
+    <p>You can view my showreel here once uploaded.</p>
+    <a href="#" class="showreel-btn">Watch Showreel</a>
+</section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <h2 class="title">Skills</h2>
+<div class="border-decor"></div>
 
-        <div class="card">
-            <ul>
-                <li>Screen Acting</li>
-                <li>Dialogue Delivery</li>
-                <li>Dancing (Bollywood)</li>
-                <li>Voice Modulation</li>
-                <li>Stage Presence</li>
-            </ul>
-        </div>
-    </section>
+<section id="photos">
+    <h2 class="title">Photos</h2>
+    <p>Here are placeholders — replace them with your acting shots.</p>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2 class="title">Contact</h2>
-        <div class="card">
-            <p><strong>Phone:</strong> +91 8250902608</p>
-            <p><strong>Email:</strong> rishirajsingh2210@gmail.com</p>
-            <p><strong>Location:</strong> Andheri West, Mumbai</p>
-        </div>
-    </section>
+    <div class="gallery">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        © 2025 Rishi Raj Singh — Actor Profile
-    </footer>
+<div class="border-decor"></div>
+
+<section id="bio">
+    <h2 class="title">Acting Profile</h2>
+    <p><strong>Age Range:</strong> 20–30</p>
+    <p><strong>Height:</strong> Add here</p>
+    <p><strong>Languages:</strong> Hindi, English (add more if needed)</p>
+    <p><strong>Location:</strong> Mumbai</p>
+</section>
+
+<div class="border-decor"></div>
+
+<section id="contact" class="contact">
+    <h2 class="title">Contact</h2>
+    <p><strong>Email:</strong> your-email@gmail.com</p>
+    <p><strong>Phone:</strong> +91 XXXXXXXX</p>
+    <p><strong>Instagram:</strong> @yourhandle</p>
+</section>
+
+<div class="border-decor"></div>
 
 </body>
 </html>
-
-
