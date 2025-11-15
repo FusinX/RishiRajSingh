@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishi Raj Singh – Acting Portfolio</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #faf3e5;
+    color: #222;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* Bollywood Header */
+header {
+    background: linear-gradient(135deg, #8b0000, #ffcc66);
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.4s ease-out;
+}
+header h1 {
+    font-size: 38px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.7);
+}
+header p {
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Decorative Border */
+.border-decor {
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(
+        45deg,
+        #ffcc66 0 10px,
+        #8b0000 10px 20px
+    );
+}
+
+/* SECTIONS */
+section {
+    padding: 40px 20px;
+    max-width: 950px;
+    margin: auto;
+    animation: fadeUp 1.2s ease-out;
+}
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #8b0000;
+    text-shadow: 0px 0px 6px rgba(255,204,0,0.5);
+}
+
+p { font-size: 17px; }
+
+/* Showreel Button */
+.showreel-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #8b0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.showreel-btn:hover {
+    background: #b30000;
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+.gallery div {
+    background: #fff4d6;
+    height: 180px;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+}
+
+/* CONTACT */
+.contact p {
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Top Pattern -->
+<div class="border-decor"></div>
+
+<header>
+    <h1>Rishi Raj Singh</h1>
+    <p>Actor • Performer • Storyteller</p>
+</header>
+
+<div class="border-decor"></div>
+
+<section id="about">
+    <h2 class="title">About Me</h2>
+    <p>
+        I’m a passionate aspiring actor and a fresher in the industry, driven by a deep love for performance 
+        and cinematic storytelling. I’m open to collaborating on all kinds of projects — films, web series, ads, 
+        content videos, and experimental work. My goal is to grow through every opportunity and deliver honest, 
+        impactful performances.
+    </p>
+</section>
+
+<div class="border-decor"></div>
+
+<section id="showreel">
+    <h2 class="title">Showreel</h2>
+    <p>You can view my showreel here once uploaded.</p>
+    <a href="#" class="showreel-btn">Watch Showreel</a>
+</section>
+
+<div class="border-decor"></div>
+
+<section id="photos">
+    <h2 class="title">Photos</h2>
+    <p>Here are placeholders — replace them with your acting shots.</p>
+
+    <div class="gallery">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
+<div class="border-decor"></div>
+
+<section id="bio">
+    <h2 class="title">Acting Profile</h2>
+    <p><strong>Age Range:</strong> 20–30</p>
+    <p><strong>Height:</strong> Add here</p>
+    <p><strong>Languages:</strong> Hindi, English (add more if needed)</p>
+    <p><strong>Location:</strong> Mumbai</p>
+</section>
+
+<div class="border-decor"></div>
+
+<section id="contact" class="contact">
+    <h2 class="title">Contact</h2>
+    <p><strong>Email:</strong> your-email@gmail.com</p>
+    <p><strong>Phone:</strong> +91 XXXXXXXX</p>
+    <p><strong>Instagram:</strong> @yourhandle</p>
+</section>
+
+<div class="border-decor"></div>
+
+</body>
+</html>
+
